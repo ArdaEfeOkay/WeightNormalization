@@ -17,8 +17,8 @@ class MyWeightNorm(object):
         #g = getattr(module, self.name + '_g')
         v = getattr(module, self.name + '_v')
         v_norm = torch.norm(v, p=2, dim=0)
-        print("v:", v)
-        print("v_norm", v_norm)
+        #print("v:", v)
+        #print("v_norm", v_norm)
         return torch.abs(v) / v_norm
         #return _weight_norm(v, 1, self.dim)
 
